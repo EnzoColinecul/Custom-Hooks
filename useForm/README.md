@@ -7,5 +7,5 @@ Ejemplo de uso:
     name: '',
     email: ''
   }
-  const [formValue, handleInputChange, reset] = useForm ()
+  const [formValue, handleInputChange, reset] = useForm (initialForm)
 ```
