@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react"
+import PropTypes from 'prop-types'
 
 const useFetch = (url) => {
   const isMounted = useRef(true)
@@ -33,5 +34,10 @@ const useFetch = (url) => {
 
   return state
 }
+
+useFetch.propTypes = {
+  url: PropTypes.string.isRequired
+}
+
 
 export default useFetch
